@@ -4,6 +4,15 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
+/* 링크 스타일 */
+a{
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+a:focus{
+  box-shadow: 0 0 5px 1px red;
+}
 html{
   font-size: 10px;
 }
@@ -16,7 +25,7 @@ body{
 }
 /* 컨테이너 */
 .container{
-  background: silver;
+  background: #aaa;
 }
 .header, .visual, .main, .slogan, .footer {
   width: 940px;
@@ -24,8 +33,41 @@ body{
 }
 /* 헤더 */
 .header{
-  background: yellow;
+  background: #fff;
+  position: relative;
 } 
+/* 로고 */
+.logo{
+  background: blue;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  left: 35px;
+  top: 50px;
+}
+/* 멤버 링크 */
+.member{
+  margin: 0 23px 0 30px;
+  padding-left: 0;
+  list-style-type: none;
+  background: pink;
+  text-align: right;
+  font-size: 0px;
+}
+.member li, .member a{
+  display: inline-block;
+  background: lime;
+}
+.member li{
+  font-size: 1.4rem;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.member a{
+  padding: 0.5em;
+  background: skyblue;
+  text-transform: uppercase;
+}
 /* 비주얼 */
 .visual{
   background: orange;
