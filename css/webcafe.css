@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 @import url("./normalize.css");
+@import url("./fontello.css");
 *, *::before, *::after{
   box-sizing: border-box;
 }
@@ -20,7 +21,7 @@ a{
   outline: none;
 }
 a:focus{
-  box-shadow: 0 0 5px 1px red;
+  box-shadow: 0 0 5px 1px #296897;
 }
 html{
   font-size: 10px;
@@ -44,28 +45,27 @@ body{
 .header{
   background: #fff;
   position: relative;
+  border-radius: 0 0 15px 15px;
+  padding-bottom: 5px;
 } 
 /* 로고 */
 .logo{
-  background: blue;
   margin-top: 0;
   margin-bottom: 0;
   position: absolute;
-  left: 35px;
-  top: 50px;
+  left: 60px;
+  top: 45px;
 }
 /* 멤버 링크 */
 .member{
   margin: 0 23px 0 30px;
   padding-left: 0;
   list-style-type: none;
-  background: pink;
   text-align: right;
   font-size: 0px;
 }
 .member li, .member a{
   display: inline-block;
-  background: lime;
 }
 .member li{
   font-size: 1.4rem;
@@ -74,17 +74,85 @@ body{
 }
 .member a{
   padding: 0.5em;
-  background: skyblue;
   text-transform: uppercase;
 }
+.navigation{
+  padding-bottom: 32px
+}
+/* 메인 메뉴 */
+.menu {
+  height: 49px;
+  margin: 0 30px;
+  padding-left: 225px;
+  list-style: none;
+  border-top: 2px solid #000;
+  border-radius: 0 0 5px 5px;
+  background: rgb(207,157,19);
+  background: linear-gradient(180deg, rgba(207,157,19,1) 0%, rgba(121,73,9,1) 35%, rgba(121,73,9,1) 70%, rgba(207,157,19,1) 100%);
+}
+.menu-act .btn-menu{
+  color: #ff0;
+}
+.menu-item{
+  position: relative;
+  float: left;
+  border-left: 2px solid rgba(255,255,255,0.5);
+}
+.btn-menu{
+  display: block;
+  padding: 1em 1.4em;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow:
+  1px 0 0 #000,
+  0 1px 0 #000,
+  -1px 0 0 #000,
+  0 -1px 0 #000;
+}
+.menu-act .btn-menu::after{
+  content:"";
+  background: pink;
+  display: block;
+  border-top: 2px solid #000;
+  position: relative;
+  top: 1em;
+}
+.btn-menu:focus{
+  box-shadow: initial;
+}
+.sub-menu{
+  display: none;
+  position: absolute;
+  padding-left: 0;
+  list-style: none;
+  top: 49px;
+  white-space: nowrap;
+}
+.sub-menu1, .sub-menu2, .sub-menu3{
+  left: 0;
+}
+.sub-menu4, .sub-menu5, .sub-menu6{
+  right: 0;
+}
+.menu-act .sub-menu {
+  display: block !important;
+}
+.sub-menu li, .sub-menu a{
+  display: inline-block;
+}
+.sub-menu a{
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
 /* 비주얼 */
 .visual{
-  background: orange;
-  height: 10vh;
+  height: 120px;
 }
 /* 메인 콘텐츠 */
 .main{
-  background: blue;
+  background: #fff;
+  border-radius: 15px 15px 0 0;
   padding: 30px 15px;
   height: 60vh; 
   display: flex;
