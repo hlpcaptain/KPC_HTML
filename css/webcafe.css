@@ -34,8 +34,9 @@ body{
   font-weight: 300;
 }
 /* 컨테이너 */
+/* 배경이미지는 먼저 선언한 것이 제일 위에 위치*/
 .container{
-  background: #aaa;
+  background: url(./images/bg_flower.png) no-repeat 50% 0, #aaa linear-gradient(#ccc, #eee 35%, #fff 65%, #fff 100%);
 }
 .header, .visual, .main, .slogan, .footer {
   width: 940px;
@@ -146,8 +147,63 @@ body{
 }
 
 /* 비주얼 */
+/* 비주얼 애니메이션 */
+@keyframes textAni{
+  0%{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0);
+    transform: translate(0, 0);
+  }
+  100%{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    transform: translate(400px, 75px);
+  }
+}
+@keyframes bgAni{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 .visual{
   height: 120px;
+  position: relative;
+  /* opacity: ; */
+}
+.visual::before, .visual::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: bgAni;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.visual::before{
+  background:  url("./images/ani_flower_01.png") no-repeat 0 -10px,
+  url("./images/ani_flower_02.png") no-repeat 670px 0;
+}
+.visual::after{
+  animation-delay: 500ms;
+  /* background: hsla(200, 50%, 50%, 0.5); */
+  background:  url("./images/ani_flower_03.png") no-repeat 300px 0,
+  url("./images/ani_flower_04.png") no-repeat 800px 0;
+}
+.visual-text{
+  width: 500px;
+  /* position: absolute; */
+  transform: translate(400px, 75px);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  animation-name: textAni;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
 }
 /* 메인 콘텐츠 */
 .main{
@@ -181,7 +237,7 @@ body{
 }
 /* 푸터 */ 
 .footer-bg{
-  background: purple;
+  background: #aaa linear-gradient(#ccc, #eee 35%, #fff 65%, #fff 100%);
 }
 .footer{
   background: pink;
