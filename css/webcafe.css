@@ -219,17 +219,131 @@ body{
 
 }
 .group1{
-  background: teal;
   width: 250px;
 }
 .group2{
-  background: tomato;
   width: 380px;
 }
 .group3{
-  background: yellowgreen;
   width: 190px;
 }
+/* 로그인 */
+.login{
+  background: radial-gradient(circle at right top, rgba(212,92,24,1), rgba(196,53,14,1));
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #aaa;
+  padding:10px
+}
+.login-heading{
+  color:yellow;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 10px;
+}
+.login-form{
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 8px;
+}
+.login-form fieldset{
+  position: relative;
+  padding: 0;
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+.user-email, .user-pw{
+  margin: 5px;
+}
+/* 속성 선택자 [] */
+[for="userEmail"],[for="userPw"]{
+  display:inline-block;
+  width: 4em;
+}
+[name="userId"],[name="userPwd"]{
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 0 0.5em;
+}
+.btn-login{
+  position: absolute;
+  top: 4.5px;
+  right: 0;
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0;
+  background: rgb(212,92,24);
+}
+.sign{
+  background: #fff;
+  padding: 10px 10px 10px 5px;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+  margin: 0;
+  display:flex;
+  justify-content: space-between;
+}
+.sign a::before{
+  color: rgb(212,92,24)
+}
+.login-form legend{
+  display:none;
+}
+
+/* 
+.login-form {
+  padding-left: 0;
+  list-style: none;
+  top: 49px;
+  white-space: nowrap;
+}
+.sign {
+  display: flex;
+  justify-content: space-between;
+}
+.sign li{
+  display: inline-block;
+}
+.sign a{
+  background: yellow;
+
+}
+ */
+/* 유효성 검사 배너 */
+.validation-list{
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.validation-list a{
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  line-height: 30px;
+  height: 30px;
+  margin: 10px 0;
+  padding-left: 45px;
+  background: url("./images/validation_icon.png") no-repeat 20px 50%,
+  linear-gradient(#ccc, #eee);
+}
+/* .validation-list li{
+  list-style: none;
+  padding-inline-start: 0;
+  background: radial-gradient(circle at right top, rgba(212,92,24,1), rgba(196,53,14,1));
+  border-radius: 30px;
+  padding:20px;
+}
+
+.validation-list a{
+  font-family: sans-serif;
+} */
+/* 웹 관련 용어 */
 /* 슬로건 */
 .slogan{
   background: lime;
