@@ -434,7 +434,7 @@ body{
 .search-wrapper {
   display: flex;
   justify-content:space-between;
-  align-content: center;
+  align-items: center;
 }
 .search-form legend {
   display: none;
@@ -456,6 +456,81 @@ body{
   padding: 0 0.85em;
 }
 /* 공지사항 및 자료실 */
+.board{
+  margin-top: 20px;
+  position: relative;
+  padding-top: 45px;
+}
+.notice-list, .notice-more, .pds-list, .pds-more{
+  display: none;
+}
+.tab-act .notice-list, .tab-act .notice-more,
+.tab-act .pds-list, .tab-act .pds-more{
+  display: block;
+}
+
+.tab{
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+}
+.pds-heading{
+  left: 81px;
+}
+.tab-act .tab{
+  z-index: 10;
+}
+.tab a{
+  display: block;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em 1em;
+  color: #666;
+}
+.tab-act .tab a{
+  color: rgb(196,53,14);
+  border-color: rgb(196,53,14) rgb(196,53,14) transparent  rgb(196,53,14);
+  background: #fff;
+}
+.notice-list, .pds-list{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.notice-list{
+
+}
+.pds-list{
+
+}
+.notice-list li, .pds-list li {
+  margin: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+}
+.notice-list a, .pds-list a{
+  width: 290px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.li a{
+ width: 10rem;
+}
+.notice-more, .pds-more{
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  padding: 0.5em;
+}
+.notice-more::before, .pds-more::before{
+  color: hsl(110, 50%,30%);
+}
+
 /* 새소식 */
 /* 슬로건 */
 .slogan{
