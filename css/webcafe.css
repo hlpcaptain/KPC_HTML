@@ -23,6 +23,10 @@ a{
 a:focus{
   box-shadow: 0 0 5px 1px #296897;
 }
+/* 이미지 하단의 갭 삭제 */
+img{
+  vertical-align: middle;
+}
 html{
   font-size: 10px;
 }
@@ -344,7 +348,67 @@ body{
   font-family: sans-serif;
 } */
 /* 웹 관련 용어 */
-
+.term{
+  top: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 15px;
+}
+.term-heading{
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.term-list{
+  margin: 0;
+  overflow: hidden;
+}
+.term-list dd{
+  margin-left: 0;
+}
+.term-list-subject, .term-list-brief{
+  float: right; /*float는 떠 있기 때문에 margin으로 조정할 수 없다*/
+  width: 145px;
+}
+.term-list-subject {
+  margin-top: -2px;
+  font-weight: 400;
+}
+.term-list-thumbnail{
+  float: left;
+}
+.term-list-brief{
+  margin-top: 5px;
+  line-height: 1.5;
+  
+}
+/* .term{
+  margin: 0;
+  top: 20px;
+  background: linear-gradient(#ccc, #eee);
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2px 20px 5px 15px;
+}
+.term-list {
+  background: yellow;
+  position: relative;
+}
+.term-list-subject {
+  font-size: 18px;
+  color: blue;
+  padding-left: 69px;
+}
+.term-list-thumbnail{
+  position: relative;
+  float: left;
+  margin: 0;
+}
+.term-list-brief{
+  padding-top: 5%;
+  padding-left: 30px;
+} */
 /* .web-standard{
   background: #eee;
   position: relative;
