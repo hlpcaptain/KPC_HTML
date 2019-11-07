@@ -501,12 +501,6 @@ body{
   padding-left: 0;
   list-style-type: none;
 }
-.notice-list{
-
-}
-.pds-list{
-
-}
 .notice-list li, .pds-list li {
   margin: 0.5em 0;
   display: flex;
@@ -527,11 +521,85 @@ body{
   right: -0.5em;
   padding: 0.5em;
 }
-.notice-more::before, .pds-more::before{
+.notice-more::before, .pds-more::before
+,news-more::before{
   color: hsl(110, 50%,30%);
 }
 
 /* 새소식 */
+.news{
+  margin-top: 20px;
+  position: relative;
+}
+.news::before{
+  content:"";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background: #aaa linear-gradient(90deg, #aaa, #eee);
+}
+.news-heading{
+  font-size: 1.5rem ;
+  color: red;
+  font-weight: 700;
+  margin: 0 0 35px 0; 
+}
+.news-item{
+  margin-left: 130px;
+}
+.news-item-heading {
+  margin: 0 0 5px 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.news-item-thumbnail{
+  position: absolute;
+  top: 54px;
+  left: 0;
+  margin: 0;
+  text-align: center;
+}
+.news-item-thumbnail img{
+  margin-bottom: 15px;
+  box-shadow: 0 15px 15px 5px #aaa;
+}
+.news-item-brief{
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+}
+.news-more {
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  padding: 0.5em;
+}
+/* .new-item{
+  background: yellow;
+  position: relative;
+  margin: 0;
+}
+.news-item-thumbnail{
+  position: absolute;
+  top: 40px;
+  left: -40px;
+}
+.news-item-heading, .news-item-date, .news-item-brief{
+  background: blue;
+  position: absolute;
+  top: 40px;
+  left: 130px;
+  width: 70%;
+}
+.news-item-brief{
+  line-height: 1.5em;
+}
+.news-more {
+  top: 0;
+  right: 0;
+} */
+
 /* 슬로건 */
 .slogan{
   background: lime;
