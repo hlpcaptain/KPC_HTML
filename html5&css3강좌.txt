@@ -1,0 +1,224 @@
+https://github.com/seulbinim
+https://github.com/hlpcaptain
+https://github.com/seulbi/KPC_HTML
+
+[git소개]
+유튜브 생활코딩 git
+
+# 개발환경 설정
+## 웹 브라우저
+1. Chrome [다운로드](https://www.google.co.kr/chrome/index.html)  
+2. Firefox [다운로드](https://www.mozilla.org/ko/firefox/new/)  
+
+## 웹 브라우저 확장 프로그램
+1. Web Developer  
+2. HeadingsMap  
+3. OpenWAX  
+4. ColorZilla   
+5. WhatFont 
+6. Viewport Resizer  
+
+## 에디터 및 확장 프로그램과 Code Theme
+1. Visual Studio Code [다운로드](https://code.visualstudio.com/)
+2. 보기 -> 확장 -> 실습에 필요한 항목 검색 후 설치  
+   * Live Server   
+   * Prettier-Code Formatter  
+   * Auto Close Tag 
+   * Auto Rename Tag 
+   * HTML Snippets  
+   * CSS Peek
+   * vscode-icons  
+   * Atom Keymap   
+   * Monokai-Contrast Theme 
+   
+## Git과 Github 
+1. Git [다운로드](https://git-scm.com/downloads)
+2. Git [간편 안내서](https://rogerdudler.github.io/git-guide/index.ko.html)  
+3. Git 초기설정 [시작하기](https://goo.gl/hqYsPC)
+4. 누구나 쉽게 이해할 수 있는 [Git입문](https://backlog.com/git-tutorial/kr/)
+4. Github [가입하기](https://github.com/)
+
+## NVM 
+1. NVM [다운로드](https://github.com/creationix/nvm)
+2. NVM을 사용하여 node.js 설치  
+   * 설치할 node [버전](https://nodejs.org/en/) 확인  
+   * NVM으로 node 설치 후 nvm use 명령을 통해 node 활성화  
+3. node-sass 설치 및 버전 확인
+   * npm install --global node-sass 
+   * node-sass -v  
+
+##. git setting
+가. 강사 파일 복사
+$ git clone https://github.com/seulbinim/exHTML5.git
+나. 강사 git 환경파일 삭제 (-rf 문의하지 않고 삭제)
+$ rm -rf .git  
+다. 초기화
+$ git init
+Initialized empty Git repository in C:/Users/user/exHTML5/.git/
+라. 버젼관리를 위한 개인 git 저장소 환경설정
+$ git config --local user.name "hlpcaptain"
+$ git config --local user.email "newlywedkim@naver.com"
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge --skip -- %f
+filter.lfs.process=git-lfs filter-process --skip
+filter.lfs.required=true
+credential.helper=manager
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=hlpcaptain
+user.email=newlywedkim@naver.com
+
+마. git 페이지에서 저장소 만듦 (KPC_HTML)
+
+바. vs code에서 원격저장소 선언
+$ git remote add origin https://github.com/hlpcaptain/KPC_HTML.git
+
+사. 원격저장소 정상 확인
+user@user-PC MINGW64 ~/exHTML5 (master)
+$ git remote -v
+origin  https://github.com/hlpcaptain/KPC_HTML.git (fetch)
+origin  https://github.com/hlpcaptain/KPC_HTML.git (push)
+
+
+아. vs code 내(local)에 추가 (add . 은 전체 staging에 저장) 및 commit (최종본 반영)
+user@user-PC MINGW64 ~/exHTML5 (master)
+$ git add .
+
+user@user-PC MINGW64 ~/exHTML5 (master)
+$ git commit -m "HTML5&CSS3 실습을 위한 초기 파일"
+[master (root-commit) 99a1370] HTML5&CSS3 실습을 위한 초기 파일
+ 37 files changed, 2554 insertions(+)
+ create mode 100644 css/font/webcafeIcon.eot
+ create mode 100644 css/font/webcafeIcon.svg
+ create mode 100644 css/font/webcafeIcon.ttf
+ create mode 100644 css/font/webcafeIcon.woff
+ create mode 100644 css/fontello.css
+ create mode 100644 css/fonts.css
+ create mode 100644 css/images/ani_flower_01.png
+ create mode 100644 css/images/ani_flower_02.png
+ create mode 100644 css/images/ani_flower_03.png
+ create mode 100644 css/images/ani_flower_04.png
+ create mode 100644 css/images/back_forward.png
+ create mode 100644 css/images/backpage_forwardpage.png
+ create mode 100644 css/images/bg_flower.png
+ create mode 100644 css/images/coffee.png
+ create mode 100644 css/images/logo.png
+ create mode 100644 css/images/rank.png
+ create mode 100644 css/images/validation_icon.png
+ create mode 100644 css/normalize.css
+ create mode 100644 css/reset.css
+ create mode 100644 css/style.css
+ create mode 100644 font/fontello.eot
+ create mode 100644 font/fontello.svg
+ create mode 100644 font/fontello.ttf
+ create mode 100644 font/fontello.woff
+ create mode 100644 font/fontello.woff2
+ create mode 100644 images/common/webcafe.ico
+ create mode 100644 images/common/webcafe.png
+ create mode 100644 images/css3_logo.png
+ create mode 100644 images/footer_logo.png
+ create mode 100644 images/free_gift.gif
+ create mode 100644 images/html5_logo.png
+ create mode 100644 images/logo.png
+ create mode 100644 images/news.gif
+ create mode 100644 images/web_standards.gif
+ create mode 100644 index.html
+ create mode 100644 js/jquery.min.js
+ create mode 100644 js/menu-tab.js
+
+$ git log --oneline
+99a1370 (HEAD -> master) HTML5&CSS3 실습을 위한 초기 파일
+
+
+자. 원격저장소로 commit <= git page KPC_HTML Repositories 에서 확인해 보면 commit 된 파일이 보임.
+user@user-PC MINGW64 ~/exHTML5 (master)
+$ git push origin master
+Enumerating objects: 46, done.
+Counting objects: 100% (46/46), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (46/46), done.
+Writing objects: 100% (46/46), 452.55 KiB | 3.35 MiB/s, done.
+Total 46 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/hlpcaptain/KPC_HTML.git
+ * [new branch]      master -> master
+
+차. 편집
+   새파일 만들기 
+   ! emmet 사용하면 HTML5 기본 형식이 자동생성됨.
+
+##개념
+* 디자인 tool 변천사
+photoshop [psd] -> sketch [Mac 전용] -> figma _ 메모기능 있음
+
+* markup_콘텐츠 중심
+3단구조              4단구조
+헤더                 헤더
+                     내비게이션
+콘텐츠               콘텐츠
+푸터                 푸터
+
+
+콘텐츠 중심 -> 시맨틱마크업 -> 네이밍
+이미지 최소화 -> vector 사용
+
+논리적 순서 (시각 장애인을 고려해 보자, 사용자 경험 중시) 
+1. 로고 : img (text로도 가능_zengarden)
+  - hyperlink
+  - 시맨틱
+2. 링크 모음 : text 형태
+  - link
+  - 개별 list link 를 위해 li or ul             
+3. 메인 메뉴 (내비게이션 역할) 
+  - nav.navigation
+
+
+* 웹접근성 연구소
+  정보마당 > 표준지침 > "한국형 웹 콘텐츠 접근성 지침 2.1" 개정
+  정보마당 > 연구자료 > 정보접근성 향상을 위한 W3C 국제표준 WAI-ARIA 사례집
+
+* aria
+  접근성을 높이기 위해서 만들어짐
+
+* position 
+  - static (기본값) 
+  - relative (static과 동일하나 option(top, bottom, left, right) offset를 주면 현위치를 기준으로 offset 만큼 위치함
+  - absolute (static 이 아닌 경우를 만날때까지 이동함)
+  - fixed
+
+* reflow repaint
+  reflow 는 새롭게 다시 그리기 때문에 성능 상대적 안좋음 
+
+* 예제로 살펴보는 WAI-ARIA DOWN
+https://www.wah.or.kr:444/_Upload/pds2/WAI-ARIA%20%EC%82%AC%EB%A1%80%EC%A7%91(%EC%98%A8%EB%9D%BC%EC%9D%B8%ED%8C%90).pdf
+
+* Layout 배치 속성 (float, position 은 block 개념) _ 유튜브에 관련 영상이 있음.
+- display
+  : block
+    전통적으로 레고처럼 쌓아가는 기법
+  : inline
+  : inline-block
+  : flex
+  : grid
+float
+ : block을 옆으로 쌓아나가다가 자리가 부족하면 줄이 바뀌는 배치기법
+position
+ : 자유롭게 배치
+ : 기준점이 있어야 한다

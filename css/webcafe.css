@@ -459,8 +459,8 @@ body{
   right: -0.5em;
   padding: 0.5em;
 }
-.notice-more::before, .pds-more::before
-,news-more::before{
+.notice-more::before, .pds-more::before,
+.news-more::before, .favorite-more::before{
   color: hsl(110, 50%,30%);
 }
 
@@ -514,6 +514,62 @@ body{
   padding: 0.5em;
 }
 
+/* 이벤트 */
+.event-heading, .site-heading, .favorite-heading {
+  font-size: 16px;
+}
+.site-list{
+  margin: 0;
+  left: 0;
+  list-style-type: none;
+}
+.point-color{
+  color: red;
+}
+/* 인기사이트 */
+.favorite {
+  margin-top: 20px;
+  position: relative;
+}
+.favorite-more{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.favorite-list{
+  margin: 0;
+  left: 0;
+  list-style-type: none;
+  counter-reset: number;
+}
+.favorite-list li{
+  counter-increment: number;
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.favorite-list li::before{
+  content: counter(number);
+  color: #fff;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+.up, .stop, .down {
+  margin-left: auto;
+  width: 9px;
+  height: 11px;
+  display: inline-box;
+  background: url("./images/rank.png") no-repeat;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%; 
+}
 
 /* 슬로건 */
 .slogan{

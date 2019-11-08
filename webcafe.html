@@ -223,31 +223,43 @@
           </article>
         </section>
       </div>
-
       <div class="group group3">
-        <section class="event">
-          <h2 class="event-heading">신규 이벤트</h2>
-          <img src="images/free_gift.gif" alt="웹표준 핵심 가입드북 2 츨시! 선착순 500명 한정으로 증정">
-          <button type="submit" class="btn-pre">이전 이벤트 보기</button>
-          <button type="submit" class="btn-next">다음 이벤트 보기</button>
-          <h2>관련 사이트</h2>
-          <ul class="site-list">
-            <li><a href="/">멀티캠퍼스</a></li>
-            <li><a href="/">W3C</a></li>
-            <li><a href="/">CSS ZenGarden</a></li>
-            <li><a href="/">웹접근성 연구소</a></li>
-            <li><a href="/">Web Standars</a></li>
-          </ul>
-        </section>
-        <section class="popular">
-          <h2 class="popular-heading">인기 사이트</h2>
-          <ul class="popular-list">
-            <li>W3C</li>
-            <li>CSS Zen Garden</li>
-            <li>MDN</li>
-            <li>Web Standards</li>
-          </ul>
-          <a href="#" class="icon-plus popuar-more" title="인기 사이트">더보기</a>
+        <div class="gradient-box">
+          <section class="event">
+            <h2 class="event-heading">
+              신규 <span class="point-color">이벤트</span>
+            </h2>
+            <div id="event-detail">
+              <p><img src="images/free_gift.gif" alt="이벤트 경품 : 웹표준 핵심 가입드북 2 선착순 500명 한정으로 증정"></p>
+              <p><em>웹표준 핵심 가입드북 2 츨시!</em> 선착순 500명 한정으로 증정</p>
+            </div>
+            <div class="btn-event">
+              <a href="/" class="btn-event-prev" role="button" aria-label="이전 이벤트 보기"></a>
+              <a href="/" class="btn-event-next" role="button" aria-label="다음 이벤트 보기"></a>
+            </div>
+          </section>
+          <section class="site">
+            <h2 class="site-heading">
+                관련 <span class="point-color">사이트</span>
+            </h2>
+            <ul class="site-list">
+              <li><a href="/">멀티캠퍼스</a></li>
+              <li><a href="/">W3C</a></li>
+              <li><a href="/">CSS ZenGarden</a></li>
+              <li><a href="/">웹접근성 연구소</a></li>
+              <li><a href="/">Web Standars</a></li>
+            </ul>
+          </section>
+        </div>
+        <section class="favorite gradient-box">
+          <h2 class="favorite-heading">인기 <span class="point-color">사이트</span></h2>
+          <ol class="favorite-list">
+            <li class="no1"><a href="/">W3C</a><em class="up" aria-label="상승"></em></li>
+            <li class="no2"><a href="/">CSS ZenGarden</a><em class="down" aria-label="하락"></em></li>
+            <li class="no3"><a href="/">MDN</a><em class="stop" aria-label="멈춤"></em></li>
+            <li class="no4"><a href="/">Web Standards</a><em class="up" aria-label="상승"></em></li>
+          </ol>
+          <a href="/" class="icon-plus favorite-more" title="인기 사이트">더보기</a>
         </section>
       </div>
     </main>
